@@ -4,6 +4,8 @@ import Section from '../../components/Section'
 
 import Gallery from '../../components/Gallery'
 
+import residentEvil from '../../asset/images/resident.png'
+
 export const Product = () => {
   const { id } = useParams()
 
@@ -36,7 +38,7 @@ export const Product = () => {
           jogo.
         </p>
       </Section>
-      <Gallery />
+      <Gallery name="Jogo teste" defaultCover={residentEvil} />
     </>
   )
 }
