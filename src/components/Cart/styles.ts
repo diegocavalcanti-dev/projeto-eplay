@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import { cores } from '../styles'
-import { TagContainer } from '../components/Tag/styles'
-import { ButtonContainer } from '../components/Button/styles'
+import { cores } from '../../styles'
+import { TagContainer } from '../Tag/styles'
+import { ButtonContainer } from '../Button/styles'
 
-import fechar from '../asset/images/fechar.png'
+import fechar from '../../asset/images/fechar.png'
 
 export const CartContainer = styled.div`
   position: fixed;
@@ -11,9 +11,13 @@ export const CartContainer = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   justify-content: flex-end;
   z-index: 1;
+
+  &.is-open {
+    display: flex;
+  }
 `
 export const Overlay = styled.div`
   position: absolute;

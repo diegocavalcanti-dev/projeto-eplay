@@ -7,7 +7,7 @@ import { GlobalCss } from './styles'
 import Rotas from './routes'
 import Footer from './components/Footer'
 import { store } from './store'
-import Cart from './Cart'
+import Cart from './components/Cart'
 
 function App() {
   return (
