@@ -1,11 +1,5 @@
-import { useEffect, useState } from 'react'
 import Banner from '../../components/Banner'
 import ProductsList from '../../components/ProductsList'
-
-import resident from '../../asset/images/resident.png'
-import diablo from '../../asset/images/diablo.png'
-import zelda from '../../asset/images/zelda.png'
-import starWars from '../../asset/images/star_wars.png'
 
 import { useGetOnSaleQuery, useGetSoonQuery } from '../../services/api'
 
